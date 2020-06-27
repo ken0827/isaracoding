@@ -69,19 +69,6 @@ $(function(){
       $(".flow-right").addClass('passflowrightFlexble').removeClass('flow-right');
       $(".flow-left").addClass('passflowleftFlexble').removeClass('flow-left');
       $(".passflow-title").append('<span><i class="fa fa-angle-down"></i></span>')
-      
-      $('.passflowFlexble').click(function(){
-        var $answers = $(this).find('.passflowrightFlexble')
-        if ($answers.hasClass('open')) {
-          $answers.removeClass('open');
-          $answers.slideUp();
-          $(this).find('span').html('<span class="fa fa-angle-down"></span>');
-        } else {
-          $answers.addClass('open');
-          $answers.slideDown();
-          $(this).find('span').html('<span class="fa fa-angle-up"></span>');
-        }
-      })
     } else {
       //それ以外のときの処理
       $("#passflowsId").addClass("passflows").removeClass("passflowsFlexble");
@@ -90,6 +77,19 @@ $(function(){
       $(".flow-left").addClass('flow-left').removeClass('passflowleftFlexble');
     }
   });
+    
+  $('.passflowFlexble').click(function(){
+    var $answers = $(this).find('.passflowrightFlexble')
+    if ($answers.hasClass('open')) {
+        $answers.removeClass('open');
+        $answers.slideUp();
+        $(this).find('span').html('<span class="fa fa-angle-down"></span>');
+    } else {
+        $answers.addClass('open');
+        $answers.slideDown();
+        $(this).find('span').html('<span class="fa fa-angle-up"></span>');
+    }
+  })
 
 
 
