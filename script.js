@@ -62,7 +62,6 @@ $(function(){
   $(window).on('load resize', function(){
     const w = $(window).width();
     const x = 768;
-    alert("aaa")
     if (w < x) {
 //画面サイズが768px未満のときの処理
       $("#passflowsId").addClass("passflowsFlexble").removeClass("passflows");
