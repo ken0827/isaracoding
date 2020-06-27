@@ -62,7 +62,7 @@ $(function(){
   $(window).on('load resize', function(){
     const w = $(window).width();
     const x = 768;
-
+    alert("aaa")
     if (w < x) {
 //画面サイズが768px未満のときの処理
       $("#passflowsId").addClass("passflowsFlexble").removeClass("passflows");
@@ -70,7 +70,7 @@ $(function(){
       $(".flow-right").addClass('passflowrightFlexble').removeClass('flow-right');
       $(".flow-left").addClass('passflowleftFlexble').removeClass('flow-left');
       $(".passflow-title").append('<span><i class="fa fa-angle-down"></i></span>')
-      alert("aaa")
+      
       $('.passflowFlexble').click(function(){
         var $answers = $(this).find('.passflowrightFlexble')
         if ($answers.hasClass('open')) {
