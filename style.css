@@ -972,6 +972,10 @@ header {
         width: 90%;
         margin: 10px auto;
     }
+    
+    ul li {
+       font-size: 12px;
+    }
 
 }
 /* wrapper-11 start */
