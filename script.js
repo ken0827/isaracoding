@@ -49,6 +49,10 @@ $(function(){
   $('.header-dital img').click(function(){
     location.reload(true);
   })
+    
+  $(function() {
+    $('html,body').animate({ scrollTop: 0 }, '1');
+  });
   
   //特典フェードイン
   $('.pp').hover(function(){
