@@ -86,5 +86,9 @@ $(function(){
     $('#snsMask').addClass('hidden')
     $('#modal').addClass('hidden')
   })
+    
+  $('#snsMask').click(function(){
+    closesns.click();
+  })
 
 })
