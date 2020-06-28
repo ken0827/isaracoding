@@ -158,6 +158,89 @@ p {
     
 }
 
+/* sns mask */
+.snsheader {
+    text-align: center;
+    font-weight: bold;
+}
+
+#closesns {
+    cursor: pointer;
+    background: rgb(199, 199, 199);
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 5px auto 0;
+}
+
+#closesns:hover {
+    opacity: 0.8;
+}
+
+.submitSns {
+    background: #da6b64;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.submitSns:hover {
+    opacity: 0.8;
+}
+
+#snsMask {
+    background: rgba(0, 0, 0, 0.4);
+    height: 120%;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#modal {
+    background: #fff;
+    width: 40%;
+    padding: 20px;
+    border-radius: 4px;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 11;
+    
+}
+
+.snsinput {
+    border: black solid 1px;
+    padding: 5px;
+    height: 50%;
+}
+
+#modal p {
+    margin: 0 0 20px;
+}
+
+#snsMask.hidden {
+    display: none;
+}
+
+#modal.hidden {
+    display: none;
+    transform: translate(0,-500px);
+}
+
+@media screen and (max-width: 480px) {
+    #modal {
+        width: 90%;
+    }
+}
+
+
 
 /* ヘッダー */
 header {
