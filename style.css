@@ -800,6 +800,20 @@ header {
     .people-introduce p {
         font-size: 14px;
     }
+    
+    .people-introduce:hover {
+        background-color: none;
+    }
+    
+    .people-introduce {
+        background-color:rgba(109, 104, 104, 0.5);
+        border: none;
+    }
+
+    .wrapper-8-1 p {
+        margin: 20px 0;
+        font-size: 12px;
+    }
 
 }
 /* wrapper-9 start */
