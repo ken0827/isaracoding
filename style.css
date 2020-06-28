@@ -241,7 +241,6 @@ p {
 }
 
 
-
 /* ヘッダー */
 header {
     width: 100%;
@@ -329,7 +328,7 @@ header {
 /* wrapper-1 */
 .wrapper-1 {
     text-align: center;
-    background: url(https://github.com/kenotacode/isaracoding/blob/master/pexels-photo-994605.jpeg?raw=true);
+    background: url(pic/pexels-photo-994605.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -442,7 +441,7 @@ header {
 
 /* wrapper-3 */
 .wrapper-3 {
-    background: url(https://github.com/kenotacode/isaracoding/blob/master/IMG_2643.jpeg?raw=true);
+    background: url(pic/IMG_2643.jpeg);
     background-size:cover;
     background-position: center;
     text-align: center;
@@ -535,7 +534,7 @@ header {
 
 .wrapper-5 {
     padding: 50px 0;
-    background: url(https://github.com/kenotacode/isaracoding/blob/master/IMG_2653.jpeg?raw=true);
+    background: url(pic/IMG_2653.jpeg);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -746,7 +745,7 @@ header {
 /* wrapper-8 start */
 .wrapper-8 {
     text-align: center;
-    background: url(https://github.com/kenotacode/isaracoding/blob/master/IMG_2670.jpeg?raw=true);
+    background: url(pic/IMG_2670.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -914,7 +913,7 @@ header {
 /* wrapper-10 start */
 
 .wrapper-10 {
-    background: url(https://github.com/kenotacode/isaracoding/blob/master/IMG_2647.jpeg?raw=true);
+    background: url(pic/IMG_2647.jpeg);
     text-align: center;
     
 }
@@ -1006,6 +1005,10 @@ header {
     margin-top: 20px;
 }
 
+.flexblespan {
+    display: none;
+}
+
 .flow-right {
     flex-basis: 80%;
 }
@@ -1019,60 +1022,71 @@ header {
     font-weight: 600;
 }
 
+.wrapper-11-flexble {
+    display: none;
+}
 
 @media screen and (max-width: 480px) {
-    
-    /* フレキシブルデザイン */
-    
     .wrapper-11 {
-        padding: 30px 0;
+        display: none;
     }
 
-    .passflowsFlexble {
-        width: 100%;
-    }
-
-    .passflowFlexble {
-        margin-bottom: 10px;
-
+    .flexblespan {
+        display: inline-block;
+        
     }
     
-    .passflowleftFlexble {
+    .wrapper-11-flexble {
+        display: block;
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .passflow-flexble {
+        margin: 5px auto;
+        padding: 0;
+        width: 95%;
+        display: block;
+        text-align: left;
+        background-color: white;
+    }
+    
+    .flow-left {
         padding: 10px;
+        width: 95%;
         cursor:pointer;
         position: relative;
         display: flex;
         align-items: center;
-        text-align: left;
-        width: 90%;
+        height: 60px;
         margin: 0 auto;
         background-color: #fef5e0;
     }
 
-    .passflowleftFlexble:hover {
-        opacity: 0.5;
-    }
-
-    .passflowleftFlexble img{
+    .flow-left img{
         width: 15%;
-        height:  5%;
         margin-right: 20px;
     }
+
     .passflow-title {
-        width: 80%;
+        width: 100%;
         font-weight: bold;
+        
+    }
+
+    .flow-left p {
+        margin: 0;
     }
 
     .brsp-rev {
         display: none;
     }
     
-    .passflowrightFlexble {
-        width: 90%;
+    .flow-right-flexble {
         font-size: 12px;
         padding: 10px;
+        width: 95%;
         margin: 5px auto;
-        text-align: left;
         background-color: #fef5e0;
         display: none;
     }
@@ -1081,25 +1095,18 @@ header {
         font-weight: normal;
     }
 
-    .passflowFlexble {
+    .passflow {
         height: auto;
-    }
-
-    .and-line,.pass-flow-img {
-        display: none;
     }
 
     .fa-angle-down, .fa-angle-up {
         float: right;
     }
 
-
-
-}
 /* wrapper-12 start */
 
 .wrapper-12 {
-    background: url(https://github.com/kenotacode/isaracoding/blob/master/RNFetchBlobTmp_6g3acjzr04ojshois11fj.jpeg?raw=true);
+    background: url(pic/RNFetchBlobTmp_6g3acjzr04ojshois11fj.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -1236,7 +1243,7 @@ header {
 
 /* wrapper-14 start */
 .wrapper-14 {
-    background: url(https://github.com/kenotacode/isaracoding/blob/master/IMG_2647.jpeg?raw=true);
+    background: url(pic/IMG_2647.jpeg);
     text-align: center;
     color: white;
 }
@@ -1493,5 +1500,6 @@ footer {
 
     #page_top a {
         font-size: 30px;
+        padding: 10px;
     }
 }
