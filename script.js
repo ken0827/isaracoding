@@ -90,8 +90,18 @@ $(function(){
         $(this).find('span').html('<span class="fa fa-angle-up"></span>');
     }
   })
+    
+//sns mask
+$('.opensns').click(function(){
+    var modal = $(this).find('#modal')
+    $('#snsMask').removeClass('hidden')
+    $('#modal').removeClass('hidden')
+  })
 
-
+  $('#closesns').click(function(){
+    $('#snsMask').addClass('hidden')
+    $('#modal').addClass('hidden')
+  })
 
 
 })
