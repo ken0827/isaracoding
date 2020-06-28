@@ -180,10 +180,9 @@ p {
 }
 
 .submitSns {
-    background: #da6b64;
+    background: #64abda;
     border-radius: 10px;
     cursor: pointer;
-    text-decoration: none;
 }
 
 .submitSns:hover {
