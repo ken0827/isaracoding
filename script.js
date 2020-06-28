@@ -59,7 +59,7 @@ $(function(){
   });
 
 // フレキシブルデザイン　アコーディオン
-  $(window).on('load resize', function(){
+  $(window).one('load resize', function(){
     const w = $(window).width();
     const x = 768;
     if (w < x) {
